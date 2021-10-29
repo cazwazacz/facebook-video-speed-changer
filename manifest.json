@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+  
+    "name": "Facebook Video Speed Changer",
+    "description": "This extension allows to change the speed of videos playing on Facebook",
+    "version": "0.0.1",
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["speedChanger.js"]
+      }
+    ],
+    "browser_action": {},
+    "permissions": [
+      "activeTab"
+    ]
+  }
